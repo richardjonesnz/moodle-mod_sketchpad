@@ -16,33 +16,33 @@
 
 
 /**
- * English strings for simplemod
+ * English strings for sketchpad
  *
  * You can have a rather longer description of the file as well,
  * if you like, and it can span multiple lines.
  *
- * @package    mod_simplemod
+ * @package    mod_sketchpad
  * @copyright  2019 Richard Jones richardnz@outlook.com
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- * @see https://github.com/moodlehq/moodle-mod_simplemod
- * @see https://github.com/justinhunt/moodle-mod_simplemod
+ * @see https://github.com/moodlehq/moodle-mod_sketchpad
+ * @see https://github.com/justinhunt/moodle-mod_sketchpad
  */
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['modulename'] = 'simplemod';
-$string['modulenameplural'] = 'simplemods';
-$string['modulename_help'] = 'Use the simplemod module for... | The simplemod module allows...';
-$string['simplemod:addinstance'] = 'Add a new simplemod';
-$string['simplemod:submit'] = 'Submit simplemod';
-$string['simplemod:view'] = 'View simplemod';
-$string['simplemodfieldset'] = 'Custom example fieldset';
-$string['simplemodname'] = 'simplemod name';
-$string['simplemodname_help'] = 'This is the content of the help tooltip associated with the simplemodname field. Markdown syntax is supported.';
-$string['simplemod'] = 'simplemod';
-$string['pluginadministration'] = 'simplemod administration';
-$string['pluginname'] = 'simplemod';
-$string['nosimplemods'] = 'No instances';
+$string['modulename'] = 'sketchpad';
+$string['modulenameplural'] = 'sketchpads';
+$string['modulename_help'] = 'Use the sketchpad module for... | The sketchpad module allows...';
+$string['sketchpad:addinstance'] = 'Add a new sketchpad';
+$string['sketchpad:submit'] = 'Submit sketchpad';
+$string['sketchpad:view'] = 'View sketchpad';
+$string['sketchpadfieldset'] = 'Custom example fieldset';
+$string['sketchpadname'] = 'sketchpad name';
+$string['sketchpadname_help'] = 'This is the content of the help tooltip associated with the sketchpadname field. Markdown syntax is supported.';
+$string['sketchpad'] = 'sketchpad';
+$string['pluginadministration'] = 'sketchpad administration';
+$string['pluginname'] = 'sketchpad';
+$string['nosketchpads'] = 'No instances';
 
-// Mod form specific simplemod settings.
+// Mod form specific sketchpad settings.
 $string['title'] = 'Activity Title: ';

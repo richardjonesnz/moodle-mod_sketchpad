@@ -15,16 +15,16 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Prints a particular instance of simplemod
+ * Prints a particular instance of sketchpad
  *
- * @package    mod_simplemod
+ * @package    mod_sketchpad
  * @copyright  202 Richard Jones richardnz@outlook.com
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- * @see https://github.com/moodlehq/moodle-mod_simplemod
- * @see https://github.com/justinhunt/moodle-mod_simplemod
+ * @see https://github.com/moodlehq/moodle-mod_sketchpad
+ * @see https://github.com/justinhunt/moodle-mod_sketchpad
  */
 
-namespace mod_simplemod\output;
+namespace mod_sketchpad\output;
 
 use renderable;
 use renderer_base;
@@ -32,21 +32,21 @@ use templatable;
 use stdClass;
 
 /**
- * Simplemod: Create a new view page renderable object
+ * sketchpad: Create a new view page renderable object
  *
- * @param object simnplemod - instance of simplemod.
+ * @param object simnplemod - instance of sketchpad.
  * @param int id - course module id.
  * @copyright  2020 Richard Jones <richardnz@outlook.com>
  */
 
 class view implements renderable, templatable {
 
-    protected $simplemod;
+    protected $sketchpad;
     protected $id;
 
-    public function __construct($simplemod, $id) {
+    public function __construct($sketchpad, $id) {
 
-        $this->simplemod = $simplemod;
+        $this->sketchpad = $sketchpad;
         $this->id = $id;
     }
     /**
@@ -59,10 +59,10 @@ class view implements renderable, templatable {
 
         $data = new stdClass();
 
-        $data->title = $this->simplemod->title;
+        $data->title = $this->sketchpad->title;
         // Moodle handles processing of std intro field.
-        $data->body = format_module_intro('simplemod',
-                $this->simplemod, $this->id);
+        $data->body = format_module_intro('sketchpad',
+                $this->sketchpad, $this->id);
 
         return $data;
     }

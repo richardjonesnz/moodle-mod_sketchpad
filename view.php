@@ -15,56 +15,56 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Prints a particular instance of simplemod
+ * Prints a particular instance of sketchpad
  *
- * @package    mod_simplemod
+ * @package    mod_sketchpad
  * @copyright  2019 Richard Jones richardnz@outlook.com
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- * @see https://github.com/moodlehq/moodle-mod_simplemod
- * @see https://github.com/justinhunt/moodle-mod_simplemod */
+ * @see https://github.com/moodlehq/moodle-mod_sketchpad
+ * @see https://github.com/justinhunt/moodle-mod_sketchpad */
 
-use mod_simplemod\output\view;
+use mod_sketchpad\output\view;
 require_once('../../config.php');
 
 // We need the course module id (id) or
-// the simplemod instance id (n).
+// the sketchpad instance id (n).
 $id = optional_param('id', 0, PARAM_INT);
 $n  = optional_param('n', 0, PARAM_INT);
 
 if ($id) {
-    $cm = get_coursemodule_from_id('simplemod', $id, 0, false,
+    $cm = get_coursemodule_from_id('sketchpad', $id, 0, false,
             MUST_EXIST);
     $course = $DB->get_record('course',
             array('id' => $cm->course), '*', MUST_EXIST);
-    $simplemod = $DB->get_record('simplemod',
+    $sketchpad = $DB->get_record('sketchpad',
             array('id' => $cm->instance), '*', MUST_EXIST);
 } else if ($n) {
-    $simplemod = $DB->get_record('simplemod', array('id' => $n), '*',
+    $sketchpad = $DB->get_record('sketchpad', array('id' => $n), '*',
             MUST_EXIST);
     $course = $DB->get_record('course',
-            array('id' => $simplemod->course), '*', MUST_EXIST);
-    $cm = get_coursemodule_from_instance('simplemod', $simplemod->id,
+            array('id' => $sketchpad->course), '*', MUST_EXIST);
+    $cm = get_coursemodule_from_instance('sketchpad', $sketchpad->id,
             $course->id, false, MUST_EXIST);
 }
 
 // Print the page header.
-$PAGE->set_url('/mod/simplemod/view.php', array('id' => $cm->id));
+$PAGE->set_url('/mod/sketchpad/view.php', array('id' => $cm->id));
 
 require_login($course, true, $cm);
 
 // Set the page information.
-$PAGE->set_title(format_string($simplemod->name));
+$PAGE->set_title(format_string($sketchpad->name));
 $PAGE->set_heading(format_string($course->fullname));
 
 // Check for intro page content.
-if (!$simplemod->intro) {
-    $simplemod->intro = '';
+if (!$sketchpad->intro) {
+    $sketchpad->intro = '';
 }
 // Start output to browser.
 echo $OUTPUT->header();
 
 // Call classes/output/view and view.mustache to create output.
-echo $OUTPUT->render(new view($simplemod, $cm->id));
+echo $OUTPUT->render(new view($sketchpad, $cm->id));
 
 // End output to browser.
 echo $OUTPUT->footer();
