@@ -39,6 +39,21 @@
 <div class="card">
     <div class="card-body">
         <h2 class="card-title">{{title}}</h2>
-        {{{body}}}
-    </div>
+            <canvas id="mod_sketchpad_canvas" width="400" height="400"></canvas>
+        <div class="mod_sketchpad_toobox">
+            <button data-action="mod_sketchpad/increase_button">+</button>
+            <span id="mod_sketchpad_size">10</span>
+            <button data-action="mod_sketchpad/decrease_button">-</button>
+            <input type="color" name="color" id="color">
+            <button data-action="mod_sketchpad/clear">X</button>
+        </div>
+        <div>
 </div>
+
+{{#js}}
+    require(['mod_sketchpad/sketchpad'],
+        function(module) {
+            module.init();
+        }
+    );
+{{/js}}

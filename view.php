@@ -64,7 +64,7 @@ if (!$sketchpad->intro) {
 echo $OUTPUT->header();
 
 // Call classes/output/view and view.mustache to create output.
-echo $OUTPUT->render(new view($sketchpad, $cm->id));
+echo $OUTPUT->render(new view($sketchpad->title));
 
 // End output to browser.
 echo $OUTPUT->footer();

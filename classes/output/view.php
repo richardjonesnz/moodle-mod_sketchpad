@@ -41,14 +41,12 @@ use stdClass;
 
 class view implements renderable, templatable {
 
-    protected $sketchpad;
-    protected $id;
+    protected $title;
 
-    public function __construct($sketchpad, $id) {
-
-        $this->sketchpad = $sketchpad;
-        $this->id = $id;
+    public function __construct($title) {
+        $this->title = $title;
     }
+
     /**
      * Export this data so it can be used as the context for a mustache template.
      *
@@ -59,11 +57,7 @@ class view implements renderable, templatable {
 
         $data = new stdClass();
 
-        $data->title = $this->sketchpad->title;
-        // Moodle handles processing of std intro field.
-        $data->body = format_module_intro('sketchpad',
-                $this->sketchpad, $this->id);
-
+        $data->title = $this->title;
         return $data;
     }
 }
