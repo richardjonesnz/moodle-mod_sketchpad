@@ -41,10 +41,10 @@ use stdClass;
 
 class view implements renderable, templatable {
 
-    protected $title;
+    protected $sketchpad;
 
-    public function __construct($title) {
-        $this->title = $title;
+    public function __construct($sketchpad) {
+        $this->sketchpad = $sketchpad;
     }
 
     /**
@@ -57,7 +57,10 @@ class view implements renderable, templatable {
 
         $data = new stdClass();
 
-        $data->title = $this->title;
+        $data->title = $this->sketchpad->title;
+        $data->width = $this->sketchpad->width;
+        $data->height = $this->sketchpad->height;
+        $data->toolbarwidth = $data->width + 4;
         return $data;
     }
 }

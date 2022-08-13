@@ -43,6 +43,8 @@ $string['sketchpad'] = 'sketchpad';
 $string['pluginadministration'] = 'sketchpad administration';
 $string['pluginname'] = 'sketchpad';
 $string['nosketchpads'] = 'No instances';
+$string['width'] = 'Canvas width';
+$string['height'] = 'Canvas height';
 
 // Mod form specific sketchpad settings.
-$string['title'] = 'Activity Title: ';
+$string['title'] = 'Sketch Title: ';

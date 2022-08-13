@@ -69,6 +69,15 @@ class mod_sketchpad_mod_form extends moodleform_mod {
                 get_string('title', 'mod_sketchpad'));
         $mform->setType('title', PARAM_TEXT);
 
+        // Add a specific mod_sketchpad fields - height width.
+        $mform->addElement('text', 'width',
+                get_string('width', 'mod_sketchpad'));
+        $mform->setType('width', PARAM_INT);
+
+        $mform->addElement('text', 'height',
+                get_string('height', 'mod_sketchpad'));
+        $mform->setType('height', PARAM_INT);
+
         // Add standard grading elements.
         $this->standard_grading_coursemodule_elements();
 

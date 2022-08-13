@@ -27,7 +27,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $plugin->component = 'mod_sketchpad';
-$plugin->version = 2020082701;
-$plugin->release = 'v1.1';
+$plugin->version = 2022081300;
+$plugin->release = 'v1.0';
 $plugin->requires = 2020060900;
-$plugin->maturity = MATURITY_BETA;
+$plugin->maturity = MATURITY_ALPHA;
