@@ -18,7 +18,7 @@
  * Prints a particular instance of sketchpad
  *
  * @package    mod_sketchpad
- * @copyright  2022 Richard Jones richardnz@outlook.com
+ * @copyright 2019 Andrew Nicols <andrew@nicols.co.uk>
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 

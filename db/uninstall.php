@@ -20,7 +20,7 @@
  * @see uninstall_plugin()
  *
  * @package    mod_sketchpad
- * @copyright  2022 Richard Jones richardnz@outlook.com
+ * @copyright  2006 Martin Dougiamas
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 

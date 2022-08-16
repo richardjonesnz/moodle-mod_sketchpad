@@ -18,7 +18,7 @@
  * This file keeps track of upgrades to the sketchpad module
  *
  * @package    mod_sketchpad
- * @copyright  2022 Richard Jones richardnz@outlook.com
+  * @copyright 2003 onwards Eloy Lafuente (stronk7) {@link http://stronk7.com}
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 

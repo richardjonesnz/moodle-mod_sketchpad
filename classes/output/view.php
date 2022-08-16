@@ -32,7 +32,7 @@ use templatable;
  *
  * @param object simnplemod - instance of sketchpad.
  * @param int id - course module id.
- * @copyright  2020 Richard Jones <richardnz@outlook.com>
+ * @copyright  2022 Richard Jones <richardnz@outlook.com>
  */
 
 class view implements renderable, templatable {
