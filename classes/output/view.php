@@ -60,7 +60,6 @@ class view implements renderable, templatable {
         $data->title = $this->sketchpad->title;
         $data->width = $this->sketchpad->width;
         $data->height = $this->sketchpad->height;
-        $data->toolbarwidth = $data->width + 4;
         return $data;
     }
 }
