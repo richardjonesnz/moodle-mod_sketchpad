@@ -22,13 +22,15 @@ const registerEventListeners = () => {
             size = (size > 5) ? (size - 5) : 5;
             sizeLabel.innerText = size;
         }
-        // Color.
-        if (e.target.closest(Selectors.actions.colorButton)) {
-            setColor(e.target.value);
-        }
         // Clear canvas.
         if (e.target.closest(Selectors.actions.clearButton)) {
             clearCanvas();
+        }
+    });
+    document.addEventListener('change', e => {
+        // Change color.
+        if (e.target.closest(Selectors.actions.colorButton)) {
+            setColor(e.target.value);
         }
     });
     canvas.addEventListener('mousedown', (e) => {
