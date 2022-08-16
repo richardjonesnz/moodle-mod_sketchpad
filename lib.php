@@ -27,8 +27,7 @@
  * @package    mod_sketchpad
  * @copyright  2019 Richard Jones richardnz@outlook.com
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- * @see https://github.com/moodlehq/moodle-mod_sketchpad
- * @see https://github.com/justinhunt/moodle-mod_sketchpad */
+ */
 
 defined('MOODLE_INTERNAL') || die();
 

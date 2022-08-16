@@ -15,21 +15,17 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Prints a particular instance of sketchpad
+ * Prepare main activity page for template.
  *
- * @package    mod_sketchpad
- * @copyright  202 Richard Jones richardnz@outlook.com
- * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- * @see https://github.com/moodlehq/moodle-mod_sketchpad
- * @see https://github.com/justinhunt/moodle-mod_sketchpad
+ * @package   mod_sketchpad
+ * @category  backup
+ * @copyright 2022 Richard Jones richardnz@outlook.com
+ * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-
 namespace mod_sketchpad\output;
-
 use renderable;
 use renderer_base;
 use templatable;
-use stdClass;
 
 /**
  * sketchpad: Create a new view page renderable object
@@ -54,12 +50,6 @@ class view implements renderable, templatable {
      * @return stdClass
      */
     public function export_for_template(renderer_base $output) {
-
-        $data = new stdClass();
-
-        $data->title = $this->sketchpad->title;
-        $data->width = $this->sketchpad->width;
-        $data->height = $this->sketchpad->height;
-        return $data;
+        return $this->sketchpad;
     }
 }

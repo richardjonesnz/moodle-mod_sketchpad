@@ -18,16 +18,14 @@
  * Defines the version and other meta-info about the plugin
  *
  * @package    mod_sketchpad
- * @copyright  2019 Richard Jones richardnz@outlook.com
+ * @copyright  2022 Richard Jones richardnz@outlook.com
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- * @see https://github.com/moodlehq/moodle-mod_sketchpad
- * @see https://github.com/justinhunt/moodle-mod_sketchpad
  */
 
 defined('MOODLE_INTERNAL') || die();
 
 $plugin->component = 'mod_sketchpad';
-$plugin->version = 2022081300;
-$plugin->release = 'v1.0';
+$plugin->version = 2022081700;
+$plugin->release = 'v1.1';
 $plugin->requires = 2020060900;
-$plugin->maturity = MATURITY_ALPHA;
+$plugin->maturity = MATURITY_BETA;

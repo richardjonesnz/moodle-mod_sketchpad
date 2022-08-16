@@ -1,5 +1,7 @@
-//import Log from 'core/log';
+// Original code: https://www.udemy.com/course/50-projects-50-days/
+// Modified for Moodle 4.0
 import Selectors from './local/selectors';
+
 let size = 5;
 let isPressed = false;
 let color = 'black';

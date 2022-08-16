@@ -33,10 +33,10 @@ require_once($CFG->dirroot . '/mod/sketchpad/backup/moodle2/backup_sketchpad_set
  *
  * @package   mod_sketchpad
  * @category  backup
- * @copyright 2019 Richard Jones richardnz@outlook.com
+ * @copyright 2022 Richard Jones richardnz@outlook.com
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- * @see https://github.com/moodlehq/moodle-mod_sketchpad
- * @see https://github.com/justinhunt/moodle-mod_sketchpad */
+ *
+ */
 class backup_sketchpad_activity_task extends backup_activity_task {
 
     /**

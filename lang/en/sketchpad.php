@@ -22,23 +22,21 @@
  * if you like, and it can span multiple lines.
  *
  * @package    mod_sketchpad
- * @copyright  2019 Richard Jones richardnz@outlook.com
+ * @copyright  2022 Richard Jones richardnz@outlook.com
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- * @see https://github.com/moodlehq/moodle-mod_sketchpad
- * @see https://github.com/justinhunt/moodle-mod_sketchpad
  */
 
 defined('MOODLE_INTERNAL') || die();
 
 $string['modulename'] = 'sketchpad';
 $string['modulenameplural'] = 'sketchpads';
-$string['modulename_help'] = 'Use the sketchpad module for... | The sketchpad module allows...';
+$string['modulename_help'] = 'Use the sketchpad module for simple drawings | The sketchpad module allows you to make a simple sketch';
 $string['sketchpad:addinstance'] = 'Add a new sketchpad';
 $string['sketchpad:submit'] = 'Submit sketchpad';
 $string['sketchpad:view'] = 'View sketchpad';
 $string['sketchpadfieldset'] = 'Custom example fieldset';
 $string['sketchpadname'] = 'sketchpad name';
-$string['sketchpadname_help'] = 'This is the content of the help tooltip associated with the sketchpadname field. Markdown syntax is supported.';
+$string['sketchpadname_help'] = 'Modified from a project by Brad Traversy on Udemy.';
 $string['sketchpad'] = 'sketchpad';
 $string['pluginadministration'] = 'sketchpad administration';
 $string['pluginname'] = 'sketchpad';

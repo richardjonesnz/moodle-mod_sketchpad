@@ -40,14 +40,13 @@
  * The variable name for the capability definitions array is $capabilities
  *
  * @package    mod_sketchpad
- * @copyright  2019 Richard Jones richardnz@outlook.com
+ * @copyright  2022 Richard Jones richardnz@outlook.com
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- * @see https://github.com/moodlehq/moodle-mod_sketchpad
- * @see https://github.com/justinhunt/moodle-mod_sketchpad */
+ */
 
 defined('MOODLE_INTERNAL') || die();
 
-// Modify capabilities as needed and remove this comment.
+// Add a sketchpad to a course.
 $capabilities = array(
     'mod/sketchpad:addinstance' => array(
         'riskbitmask' => RISK_XSS,
@@ -59,7 +58,7 @@ $capabilities = array(
         ),
         'clonepermissionsfrom' => 'moodle/course:manageactivities'
     ),
-
+    // View a sketchpad.
     'mod/sketchpad:view' => array(
         'captype' => 'read',
         'contextlevel' => CONTEXT_MODULE,

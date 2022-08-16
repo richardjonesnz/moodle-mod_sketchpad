@@ -19,7 +19,7 @@
  *
  * @package   mod_sketchpad
  * @category  backup
- * @copyright 2019 Richard Jones richardnz@outlook.com
+ * @copyright 2022 Richard Jones richardnz@outlook.com
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 

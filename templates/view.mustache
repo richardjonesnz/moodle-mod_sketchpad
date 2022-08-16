@@ -21,19 +21,21 @@
     Moodle renders a simple view page
 
     Classes required for JS:
-    * none
+    * sketchpad.js, selectors.js
 
     Data attributes required for JS:
     * none
 
     Context variables required for this template:
     * title String a page title.
-    * body String of html code the formatted module intro.
+    * width number canvas width in px.
+    * height number canvas height in px.
 
     Example context (json):
         {
          "title": "My heading",
-         "body": "<p>My html body</p>"
+         "width": "600",
+         "height": "600"
         }
 }}
 <div class="card">
@@ -49,7 +51,6 @@
         <button data-action="mod_sketchpad/clear_button">X</button>
     </div>
 </div>
-
 
 {{#js}}
     require(['mod_sketchpad/sketchpad'],
